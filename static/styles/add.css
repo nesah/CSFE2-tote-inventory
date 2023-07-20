@@ -1,0 +1,31 @@
+.header{
+    padding: 20px;
+    text-align: center;
+    background: #595c47;
+}
+
+.logo{
+    text-align: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+legend{
+    text-align: center;
+}
+
+label{
+    text-align: left;
+    margin-left: 570px;
+}
+
+fieldset{
+    margin-top: 10px;
+}
+
+
+
+
+

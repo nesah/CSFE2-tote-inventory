@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/add.css') }}"/>
+</head>
+
+<body>
+<div class="header">
+    <div class="headerlogo">
+        <img src="static\images\Brand Name White.png" alt="Tote logo" width="120">
+    </div>
+</div>
+
+<div class="item_display">
+    <form method="post" action="/add">
+        <fieldset>
+            <legend>Add Item</legend>
+            <br>
+            <div class="pictureField">
+                <label for="picture">Picture Link:</label>
+                <input type="text" id="picture" name="picture" style="margin-left: 50px;" required/>            
+            </div>
+            <br>
+            <div class="nameField">
+                <label for="name">Item Name:</label>
+                <input type="text" id="name" name="name" style="margin-left: 57px;" required/>               
+            </div>
+            <br>
+            <div class="styleField">
+                <label for="style">Item Style:</label>
+                <select id="style" name="style" style="margin-left: 62px;">
+                    <option value="tote bag">Tote Bag</option>
+                    <option value="paraphernalia">Paraphernalia</option>
+                </select>              
+            </div>
+            <br>
+            <div class="colorField">
+                <label for="color">Item Color:</label>
+                <select id="color" name="color" style="margin-left: 59px;">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="natural">Natural</option>
+                    <option value="none">N/A</option>
+                </select>                 
+            </div>
+            <br>
+            <div class="collectionfField">
+                <label for="collecction">Collection:</label>
+                <input type="text" id="collection" name="collection" style="margin-left: 62px;" required/><br>                
+            </div>
+            <br>
+            <div class="amountField">
+                <label for="amount">Amount of Stock:</label>
+                <input type="number" id="amount" name="amount" style="margin-left: 19px;" required/><br>                
+            </div>
+            <br>
+            <div class="priceField">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" style="margin-left: 97px;" required/>                 
+            </div>
+
+            <p align="center"><input type="submit"/></p>
+
+        </fieldset>
+    </form>
+</div>
+
+
+
+</body>
+</html>

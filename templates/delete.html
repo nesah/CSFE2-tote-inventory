@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/add.css') }}"/>
+</head>
+
+<body>
+<div class="header">
+    <div class="headerlogo">
+        <img src="static\images\Brand Name White.png" alt="Tote logo" width="120">
+    </div>
+</div>
+
+<div class="item_display">
+    <form method="post" action="/delete">
+        <fieldset>
+            <legend>Delete Item</legend>
+            <br>
+            <div class="deleteField">
+                <label for="itemID">Item ID:</label>
+                <input type="number" id="itemID" name="itemID" style="margin-left: 50px;" required/>
+            </div>
+            <p align="center"><input type="submit"/></p>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

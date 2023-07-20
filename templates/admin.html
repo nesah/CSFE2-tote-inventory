@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/admin.css') }}"/>
+</head>
+
+<body>
+<div class="header">
+    <div class="headerlogo">
+        <img src="static\images\Brand Name White.png" alt="Tote logo" width="120">
+    </div>
+</div>
+
+
+<div class="buttons">
+    <p align="center"><a href=add><button class="addButton">Add</button></a>
+    <a href=edit><button class="editButton">Edit</button></a>
+    <a href=delete><button class="deleteButton">Delete</button></a></p>
+</div>
+
+
+<div class="itemsdb">
+    <table class="items">
+        <tr>
+            <td> Item ID </td>
+            <td> Picture </td>
+            <td> Item Name </td>
+            <td> Style </td>
+            <td> Color </td>
+            <td> Collection </td>
+            <td> Stock </td>
+            <td> Price </td>
+        </tr>
+        {% for items in itemDetails %}
+        <tr>
+            <td>{{items[0]}}</td>
+            <td>{{items[1]}}</td>
+            <td>{{items[2]}}</td>
+            <td>{{items[3]}}</td>
+            <td>{{items[4]}}</td>
+            <td>{{items[5]}}</td>
+            <td>{{items[6]}}</td>
+            <td>{{items[7]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

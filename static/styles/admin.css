@@ -1,0 +1,46 @@
+.header{
+    padding: 20px;
+    text-align: center;
+    background: #595c47;
+}
+
+.logo{
+    text-align: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+table.items{
+    table-layout: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+th,td{
+    border: 2px solid black;
+}
+
+.buttons{
+    margin-top: 40px;
+}
+
+button.addButton{
+    height: 35px; 
+    width:60px;
+    margin-right: 10px;
+}
+
+button.editButton{
+    height: 35px; 
+    width:60px;
+}
+
+button.deleteButton{
+    height: 35px; 
+    width:60px;
+    margin-left: 10px;
+}
